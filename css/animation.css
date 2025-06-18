@@ -1,0 +1,138 @@
+
+.background_image {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    overflow:hidden;
+
+    clip-path: content-box;
+
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    filter: blur(100px);
+}
+
+.site {
+    background: #eadac3;
+}
+
+.container {
+    /* scaling via transform */
+    /* transform: scale(1);
+    transform-origin: center; */
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverart {
+    position: absolute;
+    z-index: 2;
+
+    /* stretches the image, non rectangular images will loose their aspect ratio */
+    background: #43c8a1;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* slight 3d effect */
+    box-shadow: -5px -5px 10px #0000004a inset;
+
+    /* square shape, based on screensize */
+    width: 76vh;
+    height: 76vh;
+
+    /* move negative */
+    margin-left: -38vh;
+}
+
+/* hover effect when dragging a file */
+.coverart.hover {
+    border: 3px dashed #666666;
+    background-color: #f0f0f0DD;
+}
+
+.plastic_wrap {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.5;
+
+    /* blend mode for overlaying the coverart, makes the plastic wrap look translucent */
+    mix-blend-mode: plus-lighter;
+
+    background-image: url("../img/plastic_wrap.png");
+    background-size: cover;      /* Make it cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+}
+
+.record {
+    position: absolute;
+    z-index: 0;
+
+    background: url("../img/record.png") transparent;
+    background-size: cover;      /* Make it cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+
+    width: 70vh;
+    height: 70vh;
+
+    /* move positive */
+    margin-left: 38vh;
+}
+
+.record.hover {
+    border: 3px dashed #666666;
+    border-radius: 100%;
+    background-color: #f0f0f0DD;
+}
+
+.record_vinyl {
+    z-index: 2;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: url("../img/record.png") transparent;
+    background-size: cover;      /* Make it cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+}
+
+.record_label {
+    z-index: 1;
+
+    transform: scale(0.55);
+
+    border-radius: 100%;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;      /* Make it cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+}
+
+.spinner {
+  /* Ensure rotation is around the center */
+  transform-origin: center center;
+
+  /* Apply animation */
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
