@@ -4,6 +4,8 @@
     top: 60px;
     left: 60px;
 
+    display: none;
+
     border: 1px solid var(--font_color);
     border-radius: 4px;
 
