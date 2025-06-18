@@ -48,6 +48,10 @@
 
 /* dialog content */
 
+input {
+    font-family: var(--font_family);
+}
+
 label {
     font-size: 14px;
     letter-spacing: 1px;
@@ -56,7 +60,13 @@ label {
 .window-content-form {
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto;
     row-gap: 5px;
+}
+
+.window-content-row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px auto;
     column-gap: 20px;
+    row-gap: 5px;
 }

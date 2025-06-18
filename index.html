@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="css/main.css" rel="stylesheet" />
         <link href="css/tutorial.css" rel="stylesheet" />
         <link href="css/animation.css" rel="stylesheet" />
         <link href="css/dialog.css" rel="stylesheet" />
@@ -14,10 +15,20 @@
             </div>
             <div class="window-content">
                 <div class="window-content-form">
-                    <label>Background color:</label><input value="#000000" />
-                    <label>Background blur:</label><input value="10px" />
-                    <label>Plastic wrapper opacity:</label><input value="0.5" />
-                    <label>Scale:</label><input value="1.0" />
+                    <div class="window-content-row">
+                        <label>Show background image:</label><input type="checkbox" checked id="settings-show-background" />
+                        <label>Background blur (in 'px'):</label><input value="100" id="settings-blur" />
+                    </div>
+                    <div>
+                        <hr />
+                    </div>
+                    <div class="window-content-row">
+                        <label>Background color:</label><input value="#FFFFFF" id="settings-background-color" />
+                    </div>
+                    <div class="window-content-row">
+                        <label>Plastic wrapper opacity:</label><input value="0.5" id="settings-wrapper-opacity" />
+                        <label>Scale:</label><input value="1.0" id="settings-scale" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,10 +54,10 @@
         </div>
         <div class="slide">
             <div class="background_image" id="background_image"></div>
-            <div class="site">
-                <div class="container">
+            <div class="site" id="designer">
+                <div class="container" id="designer-scaler">
                     <div class="coverart" id="coverart">
-                        <div class="plastic_wrap"></div>
+                        <div class="plastic_wrap" id="plastic_wrap"></div>
                     </div>
                     <div class="record spinner" id="record">
                         <div class="record_label" id="record_label"></div>
