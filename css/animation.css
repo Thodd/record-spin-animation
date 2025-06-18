@@ -15,10 +15,6 @@
     filter: blur(100px);
 }
 
-.site {
-    background: #eadac3;
-}
-
 .container {
     /* scaling via transform */
     /* transform: scale(1);

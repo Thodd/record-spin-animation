@@ -3,9 +3,25 @@
     <head>
         <link href="css/tutorial.css" rel="stylesheet" />
         <link href="css/animation.css" rel="stylesheet" />
+        <link href="css/dialog.css" rel="stylesheet" />
         <script src="src/main.js" type="module"></script>
     </head>
     <body>
+        <div class="window" id="settings-dialog">
+            <div class="title-bar">
+                <div>Settings</div>
+                <button class="close-button" id="close-dialog">x</button>
+            </div>
+            <div class="window-content">
+                <div class="window-content-form">
+                    <label>Background color:</label><input value="#000000" />
+                    <label>Background blur:</label><input value="10px" />
+                    <label>Plastic wrapper opacity:</label><input value="0.5" />
+                    <label>Scale:</label><input value="1.0" />
+                </div>
+            </div>
+        </div>
+
         <div class="slide tutorial">
             <div class="noise"></div>
             <div class="content">
@@ -17,7 +33,7 @@
                     <p class="center">Scroll down to the designer view.</p>
                     <p><strong>Step 1:</strong> Drag cover artwork on the vinyl sleeve</p>
                     <p><strong>Step 2:</strong> Drag label artwork on the record</p>
-                    <p><strong>Step 3:</strong> Optionally change visuals in the <span class="button">Settings Dialog</span></p>
+                    <p><strong>Step 3:</strong> Optionally change visuals in the <span class="button" id="open-dialog">Settings Dialog</span></p>
                     <p><strong>Step 4:</strong> Use a screen recording software to make a video of the animation (e.g. QuickTime)</p>
                     <p><strong>Step 5:</strong> ? ? ?</p>
                     <p><strong>Step 6:</strong> Profit. <span class="italic highlight">Higher and higher!</span></p>

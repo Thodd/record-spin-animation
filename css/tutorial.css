@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 :root {
+    --background_color_dark: #eadac3;
+    --background_color_light: #fff8ef;
+
     --font_color: #5d5135;
     --font_color_shadow: #5d51353b;
 
@@ -92,6 +95,7 @@ h1 {
 }
 
 .button {
+    cursor: pointer;
     padding: 2px 7px 2px 7px;
     letter-spacing: 1px;
     font-size: 1rem;
