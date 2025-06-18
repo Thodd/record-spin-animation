@@ -1,4 +1,4 @@
-# RecSpinAnim tm
+# RecSpinAnim™
 
 A simple web app to quickly generate vinyl recrod spinning animations, mainly for YT music videos.
 
