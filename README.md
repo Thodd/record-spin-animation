@@ -2,6 +2,8 @@
 
 A simple web app to quickly generate vinyl recrod spinning animations, mainly for YT music videos.
 
+<img src="./img/repo.png" alt="repo image" width="400"/>
+
 ## Usage
 
 To serve the app locally you can use a simple webserver, e.g. `serve`:
