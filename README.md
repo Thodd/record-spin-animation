@@ -4,7 +4,13 @@ A simple web app to quickly generate vinyl recrod spinning animations, mainly fo
 
 <img src="./img/repo.png" alt="repo image" width="400"/>
 
-## Usage
+## Online usage
+
+Provided as a service for the <span style="font-style: italic">UKIYO・Fairway</span> Software Co. (株) - All rights reversed.
+
+https://ukiyo-fairway.neocities.org/RecSpinAnim
+
+## Local server
 
 To serve the app locally you can use a simple webserver, e.g. `serve`:
 
